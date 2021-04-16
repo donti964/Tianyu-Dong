@@ -1,13 +1,5 @@
 #define _CRT_SECURE_NO_DEPRECATE
-/************************
-*创建时间：2021 01 
-*文件类型：源代码文件
-*题目来源：
-*当前状态：
-*备忘录：
-*作者：双双双
-*联系方式：QQ3503871581
-************************/
+
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -118,11 +110,11 @@ void part3()
 			q[i].getv();
 			ansq.push_back(i);
 		}
-		for(int i=0;i<n;++i)//查询
+		for(int i=0;i<n;++i)//查询query
 		{
 			sort(ansq.begin(),ansq.end(),[=](int a,int b){return q[a].v>q[b].v;});
 		}
-		for(int i=0;i<q.size();++i)//输出
+		for(int i=0;i<q.size();++i)//输出output
 		{
 			if(!q[ansq[i]].v)break;
 			printf("%s %d\n",q[ansq[i]].id.c_str(),q[ansq[i]].v);
@@ -135,7 +127,7 @@ int main(int argc,char *argv[])
 	// freopen(".out","w",stdout);
 	if(argc<2)
 	{
-		printf("你需要将待分析文件添加至运行参数中\n");
+		printf("You need to add the file to be analyzed to the operating parameters\n");
 		return 0;
 	}
 	read(argv);
@@ -155,6 +147,6 @@ int main(int argc,char *argv[])
 	// 		q.back().dic[ls]=ls2;
 	// 	}
 	// }
-	printf("构建索引完成\n");
+	printf("Index building is complete\n");
 	return 0;
 }
