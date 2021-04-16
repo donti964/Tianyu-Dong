@@ -1,6 +1,7 @@
 # Tianyu-DongDeveloping  environment：mac os  C++11  
 Program function：Realize the input of "Wall Street Journal" xml file，analyze and store the content of the article in an efficient data structure, and support query according to word frequency, sort related articles by relevance and output article title and relevance.
 
+file program is Whole program which iclude index and research。 file index only include index and part 2.  file research include the part3
 
 
 programming method: g++ main.cpp -std=c++11
@@ -21,16 +22,4 @@ structure of searching command:
 example: 2 and to
 num word1 word2...
 
-//*编译方法：g++ main.cpp -std=c++11
-执行方法：(mas os)        ./a.out wsj.xml
- (windows)                                main.exe wsj.xml
-执行流程，首先会读入所有文章，在stdout输出文章标题，然后将文章存入数据结构中，并将摘要信息存入output.txt中，最后提示”构建索引完成“，输入查询指令即可查询
-查询指令格式：
-[单词数] [单词1] [单词2] [单词3]...
-例：2 and to
-num word1 word2...
-输出格式：
-[标题1] [相关度1]
-[标题2] [相关度2]
-[标题3] [相关度3]
 ...*//
