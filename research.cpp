@@ -1,13 +1,5 @@
 #define _CRT_SECURE_NO_DEPRECATE
-/************************
-*创建时间：2021 01 
-*文件类型：源代码文件
-*题目来源：
-*当前状态：
-*备忘录：
-*作者：双双双
-*联系方式：QQ3503871581
-************************/
+
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -148,7 +140,7 @@ int main(int argc,char *argv[])
 			q.back().dic[ls]=ls2;
 		}
 	}
-	printf("构建索引完成\n");
+	printf("Index building is complete\n");
 	part3();
 	return 0;
 }
